@@ -22,6 +22,10 @@ window.onload = function(){
     CambiarColor('spName');
 }
 
+var boton = document.getElementById('btnMostrar');
+
+boton.click() = MostrarAlumno;
+
 function MostrarAlumno()
 {   /*
     var name  = document.getElementById("txtName");
