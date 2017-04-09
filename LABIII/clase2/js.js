@@ -17,13 +17,16 @@ div.innerHTML("alumno.Apellido+alumno.Nombre+alumno.Curso");
 
 //En la funcion los get elemnt para que en tiempo de llamada pida dato y muestre.
 var alumnos = [{Nombre:"Martin",Apellido:"SAnJuan",Curso:"1ºA"}];
+
 //Evneto que se dispara cuando se carga la pagian totalmente.
 window.onload = function(){
     CambiarColor('spName');
 }
 
+//Asigno el boton btnMostrar a la var boton.
 var boton = document.getElementById('btnMostrar');
 
+//Al evento click le asigno la funcion mostrar.
 boton.click() = MostrarAlumno;
 
 function MostrarAlumno()
