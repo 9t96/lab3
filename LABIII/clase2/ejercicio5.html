@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8/">
+    <script type="text/javascript">
+    
+    var num = -1;
+     
+    while(num < 0)
+    {
+        num = prompt("Ingrese un numero.");
+    }
+
+    document.write("El factorial de "+num+"es " + factorial(num));
+    
+    function factorial (n) {
+        var total = 1; 
+        for (i=1; i<=n; i++) {
+            total = total * i; 
+        }
+        return total; 
+    }
+
+    </script>
+</head>
+<body>
+    
+</body>
+
+</html>

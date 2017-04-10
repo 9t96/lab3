@@ -1,4 +1,4 @@
-    /*var nombre = "claudio";
+   /*var nombre = "claudio";
     var apellido = "Manzanares";
     var alumno = {Nombre:nombre,Apellido:apellido,Curso:"Curso 3º \"A\""};
 function MostrarAlumno()
