@@ -1,0 +1,14 @@
+.subrayado{
+    color: red;
+    text-decoration: underline;
+}
+
+.NoSubrayado
+{
+    color: midnightblue;
+}
+
+.tachado
+{
+    text-decoration: line-through;
+}

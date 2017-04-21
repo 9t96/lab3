@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link type="text/css" rel="stylesheet" href="estilo.css"/> 
+        <script type="text/javascript">
+            function cambiar()
+            {
+                var x = document.getElementById("mip");
+                x.className="subrayado";
+            }
+
+            function alternar()
+            {
+                var z = document.getElementById("mip");                
+                var x = document.getElementById("ache");
+                
+                if(z.className == "subrayado")
+                {
+                    z.className = "NoSubrayado";
+                }
+                else
+                {
+                    z.className = "subrayado";
+                }
+
+                if(x.className == "subrayado")
+                {
+                    x.className ="NoSubrayado";
+                }
+                else
+                {
+                    x.className = "subrayado";
+                }
+
+            }
+
+            function alternarTodos()
+            {
+                //Traigo X tipo de tag.
+                var elementos = document.getElementsByTagName("*");
+
+                for (var index = 0; index < elementos.length; index++) {
+                    
+                    if (elementos[index].className == "subrayado") {
+                        elementos[index].className =  "NoSubrayado";
+                    }
+                    else
+                    {
+                        elementos[index].className =  "subrayado";
+                    }              
+                }  
+            }
+
+            funtion tachar()
+            {
+                var elemento = document.getElementsById("cTodos");
+
+                elemento.onmouseover = "tachado";
+
+            }
+            //crear function obtener otodos los elementos y agregar las funciones al onmouseove y onmouseout.
+        </script>
+    </head>
+    
+    <body>
+        <h1 id="ache" class="NoSubrayado">EL TITULO PULENTA</h1>
+        <p id="mip" class="subrayado">Hola como estan</p>
+        <input type="button" value="cambiouno" id="cUno" onclick="cambiar()">
+        <input type="button" value="Cambiar" id="c" onclick="alternar()">
+        <input type="button" value="cambiarTodos" id="cTodos" onmouseover="tachar()">
+    </body>
+
+</html>
