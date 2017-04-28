@@ -1,0 +1,13 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="funciones.js"></script>
+</head>
+<body>
+	VALOR:<input type="text" id="txtValor" name="text">
+	<input type="button" value="ENVIAR" onclick="EnviarPost()">
+</body>
+</html>
