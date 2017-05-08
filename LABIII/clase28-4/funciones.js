@@ -43,9 +43,7 @@ function EnviarPost()
 2
 
 function EnviarPost()
-{
-
-
+{º
 	var nuno = document.getElementById("nUno").value
 	var ndos = document.getElementById("nDos").value;
 	var operador = document.getElementById("operacion").value;//NO OLVIDAR VALUEEEE;
