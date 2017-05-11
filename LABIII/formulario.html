@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carga de datos</title>
+
+	<meta charset="utf-8">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- Google CDN Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+	<script type="text/javascript" src="form.js" ></script>
+</head>
+<body>
+
+<div class="container">
+	<form method="" action="">
+	
+		<div class="form-group">
+			<label for="nombre">Nombre</label>
+			<input class="form-control" type="nombre" name="nombre" placeholder="Escriba nombre">
+		</div>
+
+		<div class="form-group">
+			<label for="apellido">Apellido</label>
+			<input class="form-control" type="apellido" name="apellido" placeholder="Escriba apellido">
+		</div>
+
+		<div class="form-group">
+			<label for="edad">Edad</label>
+			<input class="form-control" type="edad" name="edad" placeholder="Escriba edad">
+			<p class="help-block">Solo edad en numeros</p>
+		</div>
+
+		<!-- ARCHIVO
+		<div class="form-group">
+			<label for="archivo">Seleccione una imagen</label>
+			<input class="form-control" type="file" name="archivo">
+		</div>-->
+
+		<div class="form-group">
+			<button class="btn btn-primary" onclick="EnviarPost()">Enviar</button>
+		</div>
+
+	</form>
+</div>
+
+<div class="container">
+	<div class="jumbotron">
+		<div id="datosdevueltos">
+		
+		</div>
+	</div>
+</div>
+
+
+
+
+</body>
+</html>
