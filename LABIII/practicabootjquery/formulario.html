@@ -22,13 +22,13 @@
 
 </head>
 <body>
-<div class="container-fluid bg-warning">	
 	<div class="container">
+		<form method="" action="">
 			<div class="form-group">
 				<label for="nombre">Nombre</label>
 				<input id="name" class="form-control" type="nombre" name="nombre" placeholder="Escriba nombre">
 			</div>
-
+						<!--espacia-->
 			<div class="form-group">
 				<label for="apellido">Apellido</label>
 				<input id="sur" class="form-control" type="apellido" name="apellido" placeholder="Escriba apellido">
@@ -36,27 +36,29 @@
 
 			<div class="form-group">
 				<label for="edad">Edad</label>
+									<!--da estilo-->
 				<input id="age" class="form-control" type="edad" name="edad" placeholder="Escriba edad">
 				<p class="help-block">Solo edad en numeros</p>
-			</div>
+			</div>	<!--mini mensaje-->
 			
-			<!-- ARCHIVO
+			<!--
 			<div class="form-group">
 				<label for="archivo">Seleccione una imagen</label>
-				<input class="form-control" type="file" name="archivo">
+				<input id="arch" class="form-control" type="file" name="archivo">
 			</div>-->
 
 			<div class="form-group">
 				<!--Sino es button se recarga la pagina-->
 				<button type="button" class="btn btn-primary" onclick="EnviarPost()">Enviar</button>
 			</div>
+		</form>
+	</div>
+	
+<div class="container">
+	<div class="jumbotron">
+		<div id="mip" class="bg-danger"></div>
 	</div>
 </div>
-	<div class="container">
-		<div class="jumbotron">
-			<div id="mip" class="bg-danger"></div>
-		</div>
-	</div>
 
 </body>
 </html>

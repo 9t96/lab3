@@ -2,7 +2,7 @@
 
 function EnviarPost()
 {
-	var datos = "name="+$("#name").val()+"&sur="+$("#sur").val()+"&age="+$("#age").val();
+	var datos = "name="+$("#name").val()+"&sur="+$("#sur").val()+"&age="+$("#age").val()+"&arch="+$("#arch").val();
 
 	$.ajax({
 		type:"POST", // metodo de envio

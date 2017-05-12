@@ -45,7 +45,7 @@
 		<div class="container">
 		<div class="page-header">
 			<div class="CajaInicio animated bounceInRight">
-				<h1>Ingrese su nombre</h1>
+				<h1>Ingrese su nombre</h1>							
 				<input type="text" id="txtNombre" style="width:100%;font-size:30px" onkeyup="Suggestion(this.value)" />
 			</div>
 				  
