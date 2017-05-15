@@ -8,6 +8,7 @@ function cambiarProgreso()
 
 function cambiarProgresoConDelay()
 {
+
 	$.ajax({
 	type:"POST", 
 	dataType:"Text", 
@@ -20,10 +21,22 @@ function cambiarProgresoConDelay()
 	})
 	.done(function(valor){
 
+
 		$("#progreso").css('width',valor+'%');
 
 	})		
 	.fail(function(jqXHR, textStatus, errorThrown){
 		alert(jqXHR.responseText + "\n" + textStatus + "\n" + errorThrown);
 	})
+}
+
+function cambiarColor()
+{
+	$(function(){
+
+		var miColor=$("#color").val();
+		$("#body").css('background-color',miColor);
+	}
+
+	);
 }
