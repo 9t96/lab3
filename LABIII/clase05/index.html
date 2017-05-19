@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<title>Ejemplos JSON</title>
+	  
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animacion.css">		
+		
+		<!-- Estilos propios -->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+        <!-- jQuery library -->
+		<script type="text/javascript" src="./js/jquery.js"></script>
+
+		<!-- Funciones Propias -->
+		<script src="js/JSONjavascript.js"></script>
+		<script src="js/JSONenviarRecibir.js"></script> 
+		<script src="js/navegacion.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h1>JSON</h1>      
+		</div>
+		<div class="CajaInicio animated bounceInLeft">
+			<h1>Ejemplos JSON</h1>
+				<a href="#" class="list-group-item list-group-item list-group-item-info">
+				  <h4 class="list-group-item-heading">JSON</h4>
+				  <p class="list-group-item-text" onclick="ejemplosJSON(1)">Json simple - objeto -</p>										
+				  <p class="list-group-item-text" onclick="ejemplosJSON(2)">Json simple - array -</p>	
+				  <hr/>									
+				  <p class="list-group-item-text" onclick="ejemplosJSON(3)">Json - JSON.parse -</p>										
+				  <p class="list-group-item-text" onclick="ejemplosJSON(4)">Json - JSON.stringify -</p>
+				  <hr/>										
+				  <p class="list-group-item-text" onclick="ejemplosJSON(5)">Json - con funciones -</p>										
+				  <p class="list-group-item-text" onclick="ejemplosJSON(6)">Json complejo - con funciones -</p>
+				</a>
+				<a href="#" class="list-group-item list-group-item list-group-item-info">
+				  <h4 class="list-group-item-heading">JSON y PHP</h4>
+				  <p class="list-group-item-text" onclick="irHacia('JSON/jsonObj.php')">Crear Json(stdClass) desde PHP</p>
+				  <p class="list-group-item-text" onclick="irHacia('JSON/jsonArray.php')">Crear Json(array) desde PHP</p>
+				</a>
+				<a href="#" class="list-group-item list-group-item list-group-item-info">
+				  <h4 class="list-group-item-heading">JSON y AJAX</h4>
+				  <p class="list-group-item-text" onclick="enviarJSON()">Enviar Json por Ajax</p>
+				  <p class="list-group-item-text" onclick="recibirJSON()">Recibir Json desde Ajax</p>
+				</a>
+				<a href="#" class="list-group-item list-group-item list-group-item-info" >
+					<h4 class="list-group-item-heading">Ejemplo pr&aacute;tico con CLASES PHP, AJAX y JSON</h4>
+					<p class="list-group-item-text" onclick="irHacia('JSON/ajaxJson.php')" >Visualizaci&oacute;n de fotos subidas - con $.ajax()</p>
+				</a>
+		</div>
+			
+		<div id="divResultado" class="CajaInicio"></div>
+		
+	</div>
+</body>
+</html>

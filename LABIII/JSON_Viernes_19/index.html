@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script type="text/javascript">
+		//PUNTO 1
+		/*var	producto = {"nombre":"CocaCola","codBarra":1231,"precio":30};
+
+		alert(producto.nombre + producto.codBarra + producto.precio);
+
+		console.log(producto.nombre + producto.codBarra + producto.precio);
+		*/
+
+		//PUNTO 2
+		/*var	producto = [{"nombre":"CocaCola","codBarra":1231,"precio":30},
+						{"nombre":"Sprite","codBarra":666,"precio":25}
+						];
+		for (var i = 0; i < producto.length; i++) {
+			alert(producto[i].nombre + producto[i].codBarra + producto[i].precio);
+		}
+		
+		for (var i = 0; i < producto.length; i++) {
+			console.log(producto[i].nombre + producto[i].codBarra + producto[i].precio);*/
+
+
+		//PUNTO 4
+		/*var	producto = [{"nombre":"CocaCola","codBarra":1231,"precio":30},
+						{"nombre":"Sprite","codBarra":666,"precio":25},
+						{"nombre":"Manaos","codBarra":111,"precio":5}
+						];
+
+
+
+		$.ajax({
+		type:"POST", // metodo de envio
+		dataType:"Text", //tipo de dato
+		url:"data.php",// destino de la peticion
+		data:{objJSON:producto}, //datos a procesar
+		async:true, //TRUE OR FALSE
+		})
+		.done(function(datos){
+
+			console.log(datos);
+		})		
+		.fail(function(jqXHR, textStatus, errorThrown){
+			alert(jqXHR.responseText + "\n" + textStatus + "\n" + errorThrown);
+		})*/
+		
+
+		//PUNTO 7
+		/*
+		$.ajax({
+		type:"POST", // metodo de envio
+		dataType:"JSON", //tipo de dato // JSON ME PARSEA AUTOMATICAMENTE
+		url:"data.php",// destino de la peticion
+		async:true, //TRUE OR FALSE
+		})
+		.done(function(obj){
+
+			for(var i = 0; i < obj.length; i++) {
+				console.log(obj[i].Marca +  obj[i].Modelo +  obj[i].Color);
+			}
+			
+		})		
+		.fail(function(jqXHR, textStatus, errorThrown){
+			alert(jqXHR.responseText + "\n" + textStatus + "\n" + errorThrown);
+		})
+		*/
+
+		//PUNTO 9
+		//mockaroo.com
+		function MostrarTabla()
+		{
+			$.ajax({
+			type:"POST", // metodo de envio
+			dataType:"JSON", //tipo de dato // JSON ME PARSEA AUTOMATICAMENTE
+			url:"data.php",// destino de la peticion
+			async:true, //TRUE OR FALSE
+			})
+			.done(function(obj){
+
+				var html = '<table border=1><thead><tr><th>Marca</th><th>Modelo</th><th>Color</th></tr></thead><tbody>';
+				
+				for (var i = 0; i < obj.length; i++) {
+				    html += '<tr>';
+				    
+				    html += '<td>' + obj[i].Marca + '</td>';
+				    html += '<td>' + obj[i].Modelo + '</td>';
+				    html += '<td>' + obj[i].Color + '</td>';
+				    
+				    html += "</tr>";
+				}
+				html += '</tbody></table>';
+
+				$(html).appendTo('#divTabla');
+				
+			})		
+			.fail(function(jqXHR, textStatus, errorThrown){
+				alert(jqXHR.responseText + "\n" + textStatus + "\n" + errorThrown);
+			})
+		}
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+<input type="button"  value="MOSTRA AUTOS" name="btnTabla" onclick="MostrarTabla()">
+
+<div id="divTabla">
+	
+</div>
+
+</body>
+</html>
