@@ -1,0 +1,11 @@
+1 crear una carpeta
+2 dropear en VisualCode
+3 ejecutar tsc --init
+4 F1 configure task runner
+5 F1 launch.json
+
+6 si no funciona copia del ppt
+7 Hago lo que quiera en mi archivo ts
+8 cambiar nombre del program
+9 escribir "tsc nombreArchivo.ts"
+10 Se crea el .js
