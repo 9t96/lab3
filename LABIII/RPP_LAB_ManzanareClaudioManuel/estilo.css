@@ -1,75 +1,57 @@
-body, html {
-    padding-top: 1em;
+/*.glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -ms-animation: spin .7s infinite linear;
+    -webkit-animation: spinw .7s infinite linear;
+    -moz-animation: spinm .7s infinite linear;
 }
 
-.glyphicon.fast-right-spinner {
-    -webkit-animation: glyphicon-spin-r 1s infinite linear;
-    animation: glyphicon-spin-r 1s infinite linear;
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+  
+@-webkit-keyframes spinw {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
 }
 
-.glyphicon.normal-right-spinner {
-    -webkit-animation: glyphicon-spin-r 2s infinite linear;
-    animation: glyphicon-spin-r 2s infinite linear;
+@-moz-keyframes spinm {
+    from { -moz-transform: rotate(0deg);}
+    to { -moz-transform: rotate(360deg);}
 }
+*/
+/*
+.spin{
+     -webkit-transform-origin: 50% 58%;
+     transform-origin:50% 58%;
+     -ms-transform-origin:50% 58%; 
+     -webkit-animation: spin .2s infinite linear;
+     -moz-animation: spin .2s infinite linear;
+     -o-animation: spin .2s infinite linear;
+     animation: spin .2s infinite linear;
+}*/
 
-.glyphicon.slow-right-spinner {
-    -webkit-animation: glyphicon-spin-r 3s infinite linear;
-    animation: glyphicon-spin-r 3s infinite linear;
+.fa-spin-custom, .glyphicon-spin {
+    -webkit-animation: spin 1000ms infinite linear;
+    animation: spin 1000ms infinite linear;
 }
-
-.glyphicon.fast-left-spinner {
-    -webkit-animation: glyphicon-spin-l 1s infinite linear;
-    animation: glyphicon-spin-l 1s infinite linear;
-}
-
-.glyphicon.normal-left-spinner {
-    -webkit-animation: glyphicon-spin-l 2s infinite linear;
-    animation: glyphicon-spin-l 2s infinite linear;
-}
-
-.glyphicon.slow-left-spinner {
-    -webkit-animation: glyphicon-spin-l 3s infinite linear;
-    animation: glyphicon-spin-l 3s infinite linear;
-}
-
-@-webkit-keyframes glyphicon-spin-r {
+@-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
     }
 }
-
-@keyframes glyphicon-spin-r {
+@keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-
     100% {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg);
     }
 }
-
-@-webkit-keyframes glyphicon-spin-l {
-    0% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes glyphicon-spin-l {
-    0% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
