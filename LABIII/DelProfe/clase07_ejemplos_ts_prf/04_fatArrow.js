@@ -57,4 +57,3 @@ function CounterD() {
         console.log("counterD: " + _this.i);
     }, 500);
 }
-//# sourceMappingURL=04_fatArrow.js.map

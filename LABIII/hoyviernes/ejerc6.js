@@ -12,4 +12,3 @@ function QueContiene(miCadena) {
         console.log("Es una mezcla");
     }
 }
-

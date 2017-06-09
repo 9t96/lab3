@@ -69,4 +69,3 @@ var ironman = CompletarNombreApellido("Anthony", "Edward", "Tony", "Stark");
 console.log(superman);
 console.log(ironman);
 //************************************************************************************************/
-//# sourceMappingURL=03_funciones.js.map
