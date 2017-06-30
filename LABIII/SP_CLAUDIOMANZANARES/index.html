@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Segundo Parcial Lab III Claudio Manzanares</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+  <script src="Persona.js"></script>
+  <script src="Ciudadano.js"></script>
+  <script src="Manejadora.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <br>
+    <div class="row responsive-utilities-test visible-on">
+      <div class="col-xs-4 col-sm-4" style="background-color:lavender;">
+        <div class="form-group">
+          <label class="col-md-2 control-label">Nombre</label>
+          <div class="col-md-10">
+            <input type="text" id="txtNombre" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label">Apellido</label>
+          <div class="col-md-10">
+            <input type="text" id="txtApellido" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label">Dni</label>
+          <div class="col-md-10">
+            <input type="text" id="txtDni" />
+          </div>
+        </div>        
+        <div class="form-group">
+          <label class="col-md-2 control-label">Edad</label>
+          <div class="col-md-10">
+            <input type="text" id="txtEdad" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label">Pais</label>
+          <div class="col-md-10">
+            <select id="txtPais" class="">
+              <option value="Argentina">Argentina</option>
+              <option value="Brasil">Brasil</option>
+              <option value="Chile">Chile</option>
+              <option value="Bolivia">Bolivia</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Uruguay">Uruguay</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-2 control-label">Sexo</label>
+          <div class="col-md-10" id="sexo">
+            <input type="radio" name="sexo" value="Masculino" id="rdMasc">Masculino<br>
+            <input type="radio" name="sexo" value="Femenino" id="rdFem">Femenino<br>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-md-12">
+            <input type="button" value="Agregar" id="agregar" class="btn btn-primary" onclick="Entidades.Manejadora.AgregarPersona()"/>
+            <input type="button" value="Mostrar" id="mostrar" class="btn btn-primary" onclick="Entidades.Manejadora.MostrarCiudadanos()"/>
+            <input type="button" value="Filtrar por Pais" id="filtrado" class="btn btn-default" onclick="Entidades.Manejadora.FiltrarPorPais()"/>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-8 col-sm-8" style="background-color:lavenderblush;">
+        <div id="divTabla">
+          tabla aqui...
+        </div>
+      </div>
+    </div>
+    <input type="hidden" id="hdnIdAuto">
+  </div>
+</body>
+
+</html>
